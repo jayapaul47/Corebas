@@ -1,0 +1,14 @@
+.settings/*
+target/*
+.classpath
+.project
+.idea/*
+/target/
+extentreport/*
+extentreport*
+*.orig
+/bin/
+test-output
+/test-output/
+reports
+/reports/

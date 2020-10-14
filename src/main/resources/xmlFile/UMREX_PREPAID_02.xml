@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="UMREX Prepaid Bundle Registration Unlimited Funz UMI30">
+    	<parameter name="planName" value="Unlimited Funz"/>
+    	<parameter name="bundleName" value="UMI30"/>
+    	<parameter name="topupAmount" value="30"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPrepaidBundle" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+       
+</suite>

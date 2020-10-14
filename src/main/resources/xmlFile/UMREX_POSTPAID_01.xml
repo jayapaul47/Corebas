@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+ 	
+    
+  
+     <test name="UMREX Postpaid Registration Postpaid P38">
+    	<parameter name="planName" value="Postpaid P38"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPostpaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+          <!-- 
+    <test name="UMREX Postpaid Registration Postpaid P38;Postpaid P48">
+    	<parameter name="planName" value="Postpaid P38;Postpaid P48"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPostpaid_Multiline" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    <test name="UMREX Postpaid Registration UBUSIM MB68">
+    	<parameter name="planName" value="UBUSIM MB68"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPostpaid_Broadband" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    <test name="UMREX Postpaid ChangeRatePlan">
+    	<parameter name="NewplanName" value="Postpaid P99"/>
+    	<parameter name="msisdn" value="601139153177"/>
+    	<parameter name="ChangeRateplantype" value="Change Postpaid Rate Plan"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPostpaidChangeRatePlan">
+            <methods>
+					<include name="UMREXPostpaidChangeRatePlan" />
+			</methods>
+			</class>
+        </classes>
+    </test>  
+      -->
+</suite>

@@ -1,0 +1,43 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="UMREX Prepaid Registration Unlimited Funz">
+    	<parameter name="planName" value="Unlimited Funz"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPrepaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    
+    <!-- <test name="UMREX Prepaid Registration Traveller Pack">
+    	<parameter name="planName" value="Traveller Pack"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPrepaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    
+    <test name="UMREX Prepaid Registration Speed Mart99">
+    	<parameter name="planName" value="Speed Mart99"/>
+        <classes>
+            <class name="com.umtest.umrex.testcases.UMREXPrepaidRegistration">
+            <methods>
+					<include name="UMREXRegistrationPrepaid" />
+			</methods>
+			</class>
+        </classes>
+    </test> -->
+   
+       
+</suite>

@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMREX Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    <test name="Mobile Apps Prepaid Topup 10RM">
+    	<parameter name="planName" value="Unlimited Funz"/>
+    	<parameter name="topupType" value="Pin"/>
+    	<parameter name="topupAmount" value="10"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppTopUp">
+            <methods>
+					<include name="MobileAppTopup" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    <test name="Mobile Apps Prepaid Bundle Purhcase UMI20">
+    	<parameter name="msisdn" value="601128568044"/>
+    	<parameter name="bundleName" value="UMI 20"/>
+    	<parameter name="accountType" value="Prepaid"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppBundlePurchase">
+            <methods>
+					<include name="MobileAppPurchaseBundle" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+     <!-- <test name="Mobile Apps Prepaid Credit Share Transfer 3RM">
+    <parameter name="category" value="CreditTransfer"/>
+    <parameter name="Sender_msisdn" value="601139161626"/>
+    <parameter name="Receiver_msisdn" value="601128509089"/>
+   	<parameter name="transfer_amount" value="1"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppCreditTransfer">
+			</class>
+        </classes>
+    </test> -->
+    
+</suite>

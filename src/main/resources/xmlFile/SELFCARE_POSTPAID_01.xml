@@ -1,0 +1,94 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Selfcare Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+<!--
+	<test name="Selfcare Postpaid PayBill">
+    	<parameter name="Amount" value="1"/>
+    	<parameter name="msisdn" value="601139182008"/>
+    	<parameter name="Cardnumber" value="4012001038443335"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePaybill">
+            <methods>
+					<include name="SelfcarePayBill_postpaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    <test name="Selfcare Postpaid Purchase Golife insurance">
+    	<parameter name="msisdn" value="60182147251"/>
+    	<parameter name="Golife" value="GOLIFE5"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareGoLifePurchase">
+            <methods>
+					<include name="SelfcarePurchaseGolife" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+ 
+    <test name="Selfcare Prepaid Purchase Golife insurance">
+    	<parameter name="Golife" value="GOLIFE10"/>
+    	<parameter name="msisdn" value="601128178514"/>
+    	<parameter name="Amount" value="10"/>
+    	<parameter name="PaymentType" value="Visa"/>
+    	<parameter name="Cardnumber" value="4012001038443335"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareGolifePurchase">
+            <methods>
+					<include name="SelfcarePurchaseGolife_Prepaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+   
+    <test name="Selfcare Postpaid Change Rate Plan">
+    	<parameter name="NewRatePlan" value="P139"/>
+    	<parameter name="NewRatePlanFullname" value="Postpaid P139"/>
+    	<parameter name="msisdn" value="601139182008"/>
+    	   <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcareChangeplan">
+            <methods>
+					<include name="SelfcareChangeplan_Postpaid" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+     -->
+ 
+     <test name="Selfcare Prepaid TopUp">
+    	<parameter name="planName" value="Unlimited Funz"/>
+    	<parameter name="topupType" value="Visa"/>
+    	<parameter name="topupAmount" value="10"/>
+    	<parameter name="Cardnumber" value="4012001038443335"/>
+    	<parameter name="msisdn" value="601128227054"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePaybill">
+            <methods>
+					<include name="SelfcareAppTopup" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+        <!--
+     <test name="Selfcare Prepaid TopUp For Friend">
+    	<parameter name="planName" value="Unlimited Funz"/>
+    	<parameter name="topupType" value="Visa"/>
+    	<parameter name="topupAmount" value="10"/>
+    	<parameter name="Cardnumber" value="4012001038443335"/>
+    	<parameter name="msisdn" value="601128227054"/>
+    	<parameter name="email" value="test@u.com.my"/>
+    	<parameter name="topupmsisdn" value="601128502702"/>
+        <classes>
+            <class name="com.umtest.selfcare.testcases.SelfcarePaybill">
+            <methods>
+					<include name="SelfcareAppTopupForFriend" />
+			</methods>
+			</class>
+        </classes>
+    </test> 
+    -->  
+  </suite>

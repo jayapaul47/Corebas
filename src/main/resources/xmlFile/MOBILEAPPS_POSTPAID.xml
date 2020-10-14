@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MOBILEAPP Regression">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+<test name="MobileApp Postpaid ChangePlan">
+    	<parameter name="NewplanName" value="Postpaid P99"/>
+    	<parameter name="msisdn" value="601139153177"/>
+        <classes>
+            <class name="com.umtest.mobileapps.testcases.MobileAppChangeplan">
+            <methods>
+					<include name="MobileAppChangeRatePlan" />
+			</methods>
+			</class>
+        </classes>
+    </test>
+    
+    </suite>

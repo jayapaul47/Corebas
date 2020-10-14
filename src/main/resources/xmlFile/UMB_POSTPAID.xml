@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UMB Prepaid">
+    <listeners>
+        <listener class-name="com.umtest.testframe.listener.ExtentTestNGITestListener"></listener>
+    </listeners>
+
+    
+     <test name="U Talk Plus (On Net call) Bundle Purchase">
+    <parameter name="bundleName" value="U Talk Plus (On Net call)"/>
+    <parameter name="msisdn" value="601139132844"/>
+    <parameter name="planType" value="POSTPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundlePurchase"></class>
+        </classes>
+    </test>
+    
+  <!--  <test name="U Talk Plus (On Net call) Bundle Unsubscribe">
+    <parameter name="category" value="Unsubscribe U Talk or U SMS"/>
+    <parameter name="msisdn" value="601139132844"/>
+    <parameter name="planType" value="POSTPAID"/>
+        <classes>
+            <class name="com.umtest.umb.testcases.umbBundleUnsubscribe"></class>
+        </classes>
+    </test> -->
+    
+       
+</suite>
